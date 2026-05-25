@@ -277,6 +277,56 @@
   .btn-pricing.solid:hover { background: var(--accent-hover); }
   .pricing-note { font-size: 13px; color: var(--ink-muted); margin-top: 20px; }
 
+  /* SUPPORT CARD */
+  .support-card {
+    max-width: 480px;
+    margin: 48px auto 0;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 40px 36px;
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+  .support-free {
+    font-size: 15px;
+    color: var(--ink-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .support-free-tag {
+    background: var(--accent-light);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 3px 12px;
+    border-radius: 20px;
+  }
+  .support-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 28px 0;
+  }
+  .support-msg {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  .support-price {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--accent);
+    margin: 12px 0 4px;
+  }
+  .support-sub {
+    font-size: 14px;
+    color: var(--ink-muted);
+  }
+
   /* ACTIVATION */
   .activation-box {
     background: #fff;
@@ -757,35 +807,18 @@
 <!-- PRICING -->
 <section class="pricing-section fade-in" id="pricing">
   <div class="section-eyebrow">定价</div>
-  <div class="section-title">免费用，满意再支持</div>
-  <div class="pricing-cards">
-    <div class="pricing-card">
-      <div class="pricing-tier">免费使用</div>
-      <div class="pricing-price"><sup>¥</sup>0</div>
-      <div class="pricing-desc">完整功能，直接用</div>
-      <ul class="pricing-features">
-        <li>不限次数生成</li>
-        <li>支持公式渲染</li>
-        <li>PNG / JPEG 导出</li>
-        <li>多题自动拆分</li>
-      </ul>
-      <a href="https://moflow-engine.onrender.com/" target="_blank" class="btn-pricing outline">进入使用 →</a>
+  <div class="section-title">完全免费</div>
+  <div class="support-card">
+    <div class="support-free">
+      <span class="support-free-tag">¥0</span>
+      不限次数 · 不用注册 · 完整功能直接用
     </div>
-    <div class="pricing-card featured">
-      <div class="pricing-badge-top">支持开发</div>
-      <div class="pricing-tier">买断支持</div>
-      <div class="pricing-price"><sup>¥</sup>9.9</div>
-      <div class="pricing-desc">支持持续更新</div>
-      <ul class="pricing-features">
-        <li>优先体验新功能</li>
-        <li>使用问题优先回复</li>
-        <li>后续功能投票权</li>
-        <li>一次性，不订阅</li>
-      </ul>
-      <a href="#" class="btn-pricing solid" onclick="openModal();return false;">支持一下 →</a>
-    </div>
+    <div class="support-divider"></div>
+    <p class="support-msg">如果这个工具帮到你了，可以请我喝杯奶茶 ☕</p>
+    <div class="support-price">¥9.9</div>
+    <p class="support-sub">也欢迎加我微信，告诉我你最想要什么功能</p>
+    <a href="#" class="btn-primary" style="display:inline-block;margin-top:20px;" onclick="openModal();return false;">请我喝杯奶茶 →</a>
   </div>
-  <p class="pricing-note">不需要注册账号 · 完全免费使用 · 喜欢就支持一下</p>
 </section>
 
 
@@ -851,31 +884,11 @@
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
-          付款后怎么获得激活码？
+          需要注册或付款才能用吗？
           <span class="faq-icon"></span>
         </button>
         <div class="faq-a">
-          <p>扫码付款后，截图发给收款码旁的微信号，我会手动发激活码给你，通常在 30 分钟内。</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          激活码会过期吗？
-          <span class="faq-icon"></span>
-        </button>
-        <div class="faq-a">
-          <p>不会过期，也不绑定设备。买一次，一直用。</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          付款前能先试试吗？
-          <span class="faq-icon"></span>
-        </button>
-        <div class="faq-a">
-          <p>可以。每天有 3 次免费生成额度，不用付款就能看到真实效果。试满意了再解锁，不需要赌。</p>
+          <p>不需要。进去直接用，完整功能，不限次数，不用注册账号。¥9.9 是纯粹的支持性质，喜欢再付。</p>
         </div>
       </div>
 
